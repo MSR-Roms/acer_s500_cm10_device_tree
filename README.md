@@ -1,10 +1,5 @@
-android_device_htc_ville
+android_device_acer_swing
 ========================
 
-Android device tree for HTC Ville (One S) - Jellybean Branch
+Android device tree for ACER Swing (CloudMobile) - Jellybean Branch
 
-Known issues:
-* Video Camera not working
-* Front Camera not switching properly
-* GPS spam causes high battery drain
-* Wifi calling not available
