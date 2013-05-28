@@ -25,5 +25,5 @@
 
     <bool name="hac_enabled">true</bool>
 
-    <bool name="has_in_call_noise_suppression">false</bool>
+    <bool name="has_in_call_noise_suppression">true</bool>
 </resources>
