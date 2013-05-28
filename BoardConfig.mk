@@ -18,6 +18,8 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 #TARGET_KERNEL_SOURCE := kernel/acer/swing
+TARGET_PREBUILT_KERNEL := device/acer/swing/prebuilt/kernel
+#TARGET_KERNEL_CONFIG := swing_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
@@ -89,9 +91,6 @@ BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGE_SIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
-
-TARGET_PREBUILT_KERNEL := device/acer/swing/prebuilt/kernel
-#TARGET_KERNEL_CONFIG := swing_defconfig
 
 # Use libril in the device tree
 BOARD_PROVIDES_LIBRIL := false
