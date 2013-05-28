@@ -51,7 +51,7 @@ BOARD_USES_SEPERATED_AUDIO_INPUT := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-#TARGET_CUSTOM_BLUEDROID := ../../../device/acer/swing/bluetooth/bluetooth.c
+TARGET_CUSTOM_BLUEDROID := ../../../device/acer/swing/bluetooth/bluetooth.c
 
 # FM radio
 BOARD_HAVE_QCOM_FM := true
