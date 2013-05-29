@@ -38,10 +38,12 @@
 	 android:storageDescription="@string/storage_internal"
 	 android:primary="true"
 	 android:emulated="true"
-	 android:mtpReserve="100" />
+	 android:mtpReserve="100"
+	 android:removable="false" />
 
-    <storage android:mountPoint="/mnt/external_sd"
+    <storage android:mountPoint="/storage/sdcard1"
 	 android:storageDescription="@string/storage_sd_card"
+	 android:primary="false"	 
 	 android:removable="true"
 	 android:maxFileSize="4096" />
 
