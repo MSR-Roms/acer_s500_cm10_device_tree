@@ -15,9 +15,9 @@ BOARD_VENDOR := acer
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-#TARGET_KERNEL_SOURCE := kernel/acer/swing
-TARGET_PREBUILT_KERNEL := device/acer/swing/prebuilt/kernel
-#TARGET_KERNEL_CONFIG := swing_defconfig
+TARGET_KERNEL_SOURCE := kernel/acer/swing
+#TARGET_PREBUILT_KERNEL := device/acer/swing/prebuilt/kernel
+TARGET_KERNEL_CONFIG := acer_a9_cm_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
