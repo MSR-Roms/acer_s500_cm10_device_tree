@@ -72,6 +72,8 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 BOARD_HOSTAPD_DRIVER             := NL80211
 BOARD_WLAN_DEVICE                := qcwcn
+WIFI_EXT_MODULE_NAME             := cfg80211
+WIFI_EXT_MODULE_PATH             := "/system/lib/modules/cfg80211.ko"
 WIFI_DRIVER_MODULE_NAME          := wlan
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/wlan.ko"
 
