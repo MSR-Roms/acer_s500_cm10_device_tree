@@ -247,13 +247,13 @@ static const str_map effects[] = {
 };
 
 static const str_map iso[] = {
-    { CameraParameters::ISO_AUTO,  CAMERA_ISO_AUTO},
-    { CameraParameters::ISO_HJR,   CAMERA_ISO_DEBLUR},
-    { CameraParameters::ISO_100,   CAMERA_ISO_100},
-    { CameraParameters::ISO_200,   CAMERA_ISO_200},
-    { CameraParameters::ISO_400,   CAMERA_ISO_400},
-    { CameraParameters::ISO_800,   CAMERA_ISO_800 },
-    { CameraParameters::ISO_1600,  CAMERA_ISO_1600 }
+    { CameraParameters::ISO_AUTO,  MSM_V4L2_ISO_AUTO},
+    { CameraParameters::ISO_HJR,   MSM_V4L2_ISO_DEBLUR},
+    { CameraParameters::ISO_100,   MSM_V4L2_ISO_100},
+    { CameraParameters::ISO_200,   MSM_V4L2_ISO_200},
+    { CameraParameters::ISO_400,   MSM_V4L2_ISO_400},
+    { CameraParameters::ISO_800,   MSM_V4L2_ISO_800 },
+    { CameraParameters::ISO_1600,  MSM_V4L2_ISO_1600 }
 };
 
 static const str_map scenemode[] = {
@@ -1558,13 +1558,13 @@ status_t  QCameraHardwareInterface::setISOValue(const CameraParameters& params) 
         ALOGE("ISO Value : %d",value);
         if (value != NOT_FOUND) {
             int temp = value;
-            if (value == CAMERA_ISO_DEBLUR) {
+            if (value == MSM_V4L2_ISO_DEBLUR) {
                temp_hjr = true;
                native_set_parms(MM_CAMERA_PARM_HJR, sizeof(int), (void*)&temp_hjr);
                mHJR = value;
             }
             else {
-               if (mHJR == CAMERA_ISO_DEBLUR) {
+               if (mHJR == MSM_V4L2_ISO_DEBLUR) {
                    temp_hjr = false;
                    native_set_parms(MM_CAMERA_PARM_HJR, sizeof(int), (void*)&temp_hjr);
                    mHJR = value;
