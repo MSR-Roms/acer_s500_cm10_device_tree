@@ -145,6 +145,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CloudMobileSettings
 
+# NFC Support
+PRODUCT_PACKAGES += \
+    libnfc \
+    libnfc_jni \
+    Nfc \
+    Tag \
+    com.android.nfc_extras
+	
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
     NFCEE_ACCESS_PATH := device/lge/mako/nfc/nfcee_access.xml
