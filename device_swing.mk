@@ -178,7 +178,7 @@ PRODUCT_COPY_FILES += \
 # ALSA configuration
 PRODUCT_COPY_FILES += \
     device/acer/swing/configs/snd_soc_msm_2x:system/etc/snd_soc_a9/snd_soc_msm \
-    device/acer/swing/configs/snd_soc_msm_2x:system/etc/snd_soc_a9/snd_soc_msm_2x \
+    device/acer/swing/configs/snd_soc_msm_a9:system/etc/snd_soc_a9/snd_soc_msm_2x \
     device/acer/swing/configs/snd_soc_msm_2x:system/etc/snd_soc_a9/snd_soc_msm_Sitar
 
 # Thermal monitor configuration
