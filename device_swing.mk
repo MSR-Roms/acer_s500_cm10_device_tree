@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libqdutils \
     libtilerenderer
+	
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8960
 
 # OMX
 PRODUCT_PACKAGES += \
