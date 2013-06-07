@@ -26,7 +26,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from mint device
-$(call inherit-product, device/acer/swing/swing.mk)
+$(call inherit-product, device/acer/swing/device_swing.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_swing
