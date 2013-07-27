@@ -7,8 +7,6 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/acer/swing/overlay
 
-
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
@@ -20,17 +18,6 @@ PRODUCT_COPY_FILES += \
 # if the xhdpi doesn't exist.
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/vold.fstab:system/etc/vold.fstab \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
-
-
-# Key layouts and touchscreen
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/acer-input.idc:system/usr/idc/acer-input.idc \
-    $(LOCAL_PATH)/configs/cypress-ts.idc:system/usr/idc/cypress-ts.idc \
-    $(LOCAL_PATH)/configs/msm8960-snd-card_Button_Jack.kl:system/usr/keylayout/msm8960-snd-card_Button_Jack.kl 
 
 $(call inherit-product-if-exists, vendor/acer/swing/swing-vendor.mk)
 
@@ -155,9 +142,9 @@ PRODUCT_PACKAGES += \
 	
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    NFCEE_ACCESS_PATH := device/lge/mako/nfc/nfcee_access.xml
+    NFCEE_ACCESS_PATH := device/acer/swing/configs/nfcee_access.xml
 else
-    NFCEE_ACCESS_PATH := device/lge/mako/nfc/nfcee_access_debug.xml
+    NFCEE_ACCESS_PATH := device/acer/swing/configs/nfcee_access_debug.xml
 endif
 
 PRODUCT_COPY_FILES += \
@@ -170,11 +157,6 @@ PRODUCT_COPY_FILES += \
    device/acer/swing/configs/OperatorPolicy.xml:system/etc/OperatorPolicy.xml \
    device/acer/swing/configs/UserPolicy.xml:system/etc/UserPolicy.xml
   
-# Keylayouts and Keychars
-PRODUCT_COPY_FILES += \
-    device/acer/swing/keychars/keypad_swing_qwerty.kcm:system/usr/keychars/keypad_swing_qwerty.kcm \
-    device/acer/swing/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl 
-
 # ALSA configuration
 PRODUCT_COPY_FILES += \
     device/acer/swing/configs/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm \
