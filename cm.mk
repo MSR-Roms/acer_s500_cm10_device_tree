@@ -17,7 +17,7 @@ $(call inherit-product, device/acer/swing/device_swing.mk)
 PRODUCT_DEVICE := swing
 PRODUCT_NAME := cm_swing
 PRODUCT_BRAND := acer
-PRODUCT_MODEL := CloudMobile
+PRODUCT_MODEL := S500
 PRODUCT_MANUFACTURER := acer
 
 # Set build fingerprint / ID / Product Name ect.
