@@ -1,1 +1,1 @@
-add_lunch_combo cm_swing-eng
+add_lunch_combo cm_swing-userdebug
