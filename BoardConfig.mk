@@ -1,4 +1,4 @@
-USE_CAMERA_STUB := false
+USE_CAMERA_STUB := true
 
 # Gps
 #BOARD_USES_QCOM_GPS := true
@@ -95,10 +95,6 @@ BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
 
 # Use libril in the device tree
 BOARD_PROVIDES_LIBRIL := false
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
 
 # NFC
 BOARD_HAVE_NFC := true
