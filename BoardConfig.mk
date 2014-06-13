@@ -22,7 +22,7 @@ TARGET_NO_BOOTLOADER := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/acer/swing
 #TARGET_PREBUILT_KERNEL := device/acer/swing/prebuilt/kernel
-TARGET_KERNEL_CONFIG := acer_a9_cm_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_swing_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
@@ -95,6 +95,10 @@ BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
 
 # Use libril in the device tree
 BOARD_PROVIDES_LIBRIL := false
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # NFC
 BOARD_HAVE_NFC := true
